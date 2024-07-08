@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> <!-- Mengatur karakter encoding untuk dokumen -->
+    <link rel="shortcut icon" type="x-icon" href="gambaricon.png"> <!-- Menambahkan ikon untuk tab browser -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Mengatur tampilan responsif -->
+    <title>Aman Aja</title> <!-- Judul halaman -->
+    <link rel="stylesheet" href="styles.css"> <!-- Menghubungkan dokumen CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+</head>
+
+<body style="background-color: #f7f7f7;">
+    <header class="py-2 mx-auto">
+        <nav class="d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <a href="index.html"> <!-- Tautan ke halaman beranda -->
+                    <img src="gambar.png" alt="Aman Aja Logo"> <!-- Logo -->
+                </a>
+            </div>
+            <div class="d-flex gap-4">
+                <a href="index.html">Home</a> <!-- Tautan ke halaman beranda -->
+                <a href="about.html">About</a> <!-- Tautan ke halaman tentang -->
+                <a href="products.html">Product</a> <!-- Tautan ke halaman produk -->
+                <a class="contact-button" href="contact.html">Contact Us</a>
+                <!-- Tautan ke halaman kontak dengan tombol bergaya -->
+            </div>
+        </nav>
+    </header>
+    <section class="hero">
+        <video autoplay muted loop id="heroVideo">
+            <!-- Menampilkan video di latar belakang dengan pengaturan autoplay, tanpa suara, dan loop -->
+            <source src="videoback.mp4" type="video/mp4"> <!-- Sumber video -->
+            Your browser does not support HTML5 video. <!-- Pesan jika browser tidak mendukung video -->
+        </video>
+        <div class="hero-text">
+            <h1>"Akuntansi adalah keahlian kami. Kami akan mengurusnya, sehingga Anda dapat fokus pada urusan Anda."</h1>
+            <!-- Judul hero -->
+            <a class="buttonlearnmore" href="learnmore.html">Learn More</a> <!-- Tombol untuk belajar lebih lanjut -->
+        </div>
+    </section>
+    <main>
+        <section class="company-profile">
+            <div class="text-section">
+                <h1>Profil Perusahaan</h1> <!-- Judul profil perusahaan -->
+                <p>Didirikan pada tahun 2024, Aman Aja Accounting Consultant adalah firma layanan lengkap dengan penawaran terjangkau
+                   solusi akuntansi untuk individu dan bisnis lokal dan internasional.</p>
+                <!-- Deskripsi profil perusahaan -->
+                <a href="about.html" class="buttonabout">About</a> <!-- Tombol untuk halaman tentang -->
+            </div>
+            <div class="image-section">
+                <img src="building.png" alt="Building"> <!-- Gambar gedung -->
+            </div>
+        </section>
+
+        <section class="content">
+            <div class="content-item">
+                <h2>Keuntungan kita</h2> <!-- Judul kelebihan perusahaan -->
+                <div class="sub-content">
+                    <div class="sub-item">
+                        <h3>Inovatif</h3>
+                        <p>Memanfaatkan teknologi terkini untuk solusi keuangan mutakhir.</p>
+                        <!-- Kelebihan inovatif -->
+                    </div>
+                    <div class="sub-item">
+                        <h3>Luas</h3>
+                        <p>Menawarkan berbagai layanan, mulai dari persiapan pajak hingga pengelolaan kekayaan.</p>
+                        <!-- Kelebihan komprehensif -->
+                    </div>
+                    <div class="sub-item">
+                        <h3>Dipersonalisasi</h3>
+                        <p>Strategi yang disesuaikan untuk memenuhi tujuan keuangan unik Anda.</p>
+                        <!-- Kelebihan personalisasi -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="slider2">
+            <h1>Trusted in 5+ Industries in Indonesia</h1> <!-- Judul kepercayaan industri -->
+            <div class="slider">
+                <div class="slide-track">
+                    <div class="slide">
+                        <img src="Logo_Indomaret.png" alt="Logo Perusahaan 1"> <!-- Logo perusahaan 1 -->
+                    </div>
+                    <div class="slide">
+                        <img src="bukalapak.jpeg" alt="Logo Perusahaan 2"> <!-- Logo perusahaan 2 -->
+                    </div>
+                    <div class="slide">
+                        <img src="shopee.png" alt="Logo Perusahaan 3"> <!-- Logo perusahaan 3 -->
+                    </div>
+                    <div class="slide">
+                        <img src="tokopedia.avif" alt="Logo Perusahaan 4"> <!-- Logo perusahaan 4 -->
+                    </div>
+                    <div class="slide">
+                        <img src="gojek.png" alt="Logo Perusahaan 5"> <!-- Logo perusahaan 5 -->
+                    </div>
+                    <!-- Menduplikat -->
+                    <div class="slide">
+                        <img src="Logo_Indomaret.png" alt="Logo Perusahaan 1"> <!-- Duplikat logo perusahaan 1 -->
+                    </div>
+                    <div class="slide">
+                        <img src="bukalapak.jpeg" alt="Logo Perusahaan 2"> <!-- Duplikat logo perusahaan 2 -->
+                    </div>
+                    <div class="slide">
+                        <img src="shopee.png" alt="Logo Perusahaan 3"> <!-- Duplikat logo perusahaan 3 -->
+                    </div>
+                    <div class="slide">
+                        <img src="tokopedia.avif" alt="Logo Perusahaan 4"> <!-- Duplikat logo perusahaan 4 -->
+                    </div>
+                    <div class="slide">
+                        <img src="gojek.png" alt="Logo Perusahaan 5"> <!-- Duplikat logo perusahaan 5 -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testi">
+            <h1>Apa Kata Klien Kami</h1> <!-- Judul testimoni klien -->
+            <div class="testimonial-slider">
+                <div class="testimonial-list" role="region" aria-label="Testimonials">
+                    <!-- Testimonial -->
+                    <div class="testimonial">
+                        <i class="bi bi-quote"></i> <!-- Ikon kutipan -->
+                        <blockquote>
+                            Konsultan Akuntansi Aman Aja telah berperan penting dalam mengarahkan tanggung jawab perpajakan kami.
+                            Keahlian dan perhatian mereka terhadap detail tidak tertandingi.
+                        </blockquote> <!-- Isi testimoni -->
+                        <div class="user-info">
+                            <img src="1.jpg" alt="" /> <!-- Foto user -->
+                            <div class="user-details">
+                                <p class="name">William Tanuwi</p>
+                                <p class="company">Owner Seblak UMKM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial -->
+                    <div class="testimonial">
+                        <i class="bi bi-quote"></i> <!-- Ikon kutipan -->
+                        <blockquote>
+                            Profesional dan ramah pengguna, situs Aman Aja menyederhanakan pertanyaan keuangan saya. Seorang pria
+                            Aja profesional, responsif, dan berdedikasi dalam memberikan hasil.
+                        </blockquote> <!-- Isi testimoni -->
+                        <div class="user-info">
+                            <img src="2.jpg" alt="" /> <!-- Foto user -->
+                            <div class="user-details">
+                                <p class="name">Rudy Salam</p>
+                                <p class="company">Public Accountant</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial -->
+                    <div class="testimonial">
+                        <i class="bi bi-quote"></i> <!-- Ikon kutipan -->
+                        <blockquote>
+                            Komitmen Aman Aja dalam memberikan strategi keuangan yang dipersonalisasi melalui a
+                            situs web yang dirancang dengan baik dan informatif menjadikan mereka mitra tepercaya dalam menavigasi masa kini
+                            lanskap keuangan.
+                        </blockquote> <!-- Isi testimoni -->
+                        <div class="user-info">
+                            <img src="3.jpg" alt="" /> <!-- Foto user -->
+                            <div class="user-details">
+                                <p class="name">Budi Hartanto</p>
+                                <p class="company">CEO, Indoraya Group</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Navigasi tombol -->
+                <button class="nav prev" aria-label="Previous Testimonial">
+                    <i class="bi bi-chevron-left"></i> <!-- Tombol navigasi sebelumnya -->
+                </button>
+                <button class="nav next" aria-label="Next Testimonial">
+                    <i class="bi bi-chevron-right"></i> <!-- Tombol navigasi berikutnya -->
+                </button>
+                <!-- Navigasi dot -->
+                <div class="dots-container"></div>
+            </div>
+        </section>
+    </main>
+    <section class="extra-content">
+        <p>Di Aman Aja Consulting, kami berdedikasi untuk menyediakan layanan keuangan terbaik yang disesuaikan untuk memenuhi kebutuhan Anda
+            kebutuhan unik. Tim kami yang berpengalaman siap membantu Anda menavigasi kompleksitas persiapan pajak,
+            perencanaan keuangan start-up, dan manajemen kekayaan. Percayakan kepada kami untuk memberikan hasil yang melebihi Anda
+            harapan.</p> <!-- Konten tambahan -->
+    </section>
+    <footer>
+        <div class="footer-content d-flex justify-content-between align-items-center">
+            <div class="footer-logo">
+                <img src="gambar.png" alt="Aman Aja Logo"> <!-- Logo footer -->
+            </div>
+            <div class="footer-links">
+                <a href="#">Facebook</a> <!-- Tautan ke Facebook -->
+                <a href="#">Twitter</a> <!-- Tautan ke Twitter -->
+                <a href="#">Instagram</a> <!-- Tautan ke Instagram -->
+                <a href="#">LinkedIn</a> <!-- Tautan ke LinkedIn -->
+            </div>
+        </div>
+        <div class="footer-copyright mt-1">
+            &copy; 2024 Aman Aja Accounting Consultant <!-- Copyright -->
+        </div>
+    </footer>
+
+    <script>
+        const slider = document.querySelector(".testimonial-slider");
+        const testimonials = document.querySelectorAll(".testimonial");
+        const nextBtn = document.querySelector(".next");
+        const prevBtn = document.querySelector(".prev");
+        const dotsContainer = document.querySelector(".dots-container");
+
+        let currentIndex = 0;
+        let touchStartX = 0;
+        let touchEndX = 0;
+        let autoSlideInterval;
+
+        // Event listeners
+        function initApp() {
+            slider.addEventListener("touchstart", handleTouchStart);
+            slider.addEventListener("touchend", handleTouchEnd);
+            slider.addEventListener("mouseover", stopAutoSlide);
+            slider.addEventListener("mouseleave", startAutoSlide);
+            nextBtn.addEventListener("click", nextTestimonial);
+            prevBtn.addEventListener("click", prevTestimonial);
+        }
+
+        // Auto slide
+        function startAutoSlide() {
+            autoSlideInterval = setInterval(nextTestimonial, 5000); // 5s
+        }
+
+        function stopAutoSlide() {
+            clearInterval(autoSlideInterval);
+        }
+
+        // Touch navigation
+        function handleTouchStart(event) {
+            touchStartX = event.touches[0].clientX;
+        }
+
+        function handleTouchEnd(event) {
+            touchEndX = event.changedTouches[0].clientX;
+            handleTouchSwipe();
+        }
+
+        function handleTouchSwipe() {
+            const swipeThreshold = 50; // swipe sensitivity
+            if (touchStartX - touchEndX > swipeThreshold) {
+                nextTestimonial(); // swipe left
+            } else if (touchEndX - touchStartX > swipeThreshold) {
+                prevTestimonial(); // swipe right
+            }
+        }
+
+        // Dot navigation
+        function renderDotButtons() {
+            for (let i = 0; i < testimonials.length; i++) {
+                const button = document.createElement("button");
+                button.classList.add("dot");
+                button.classList.toggle("active", i === currentIndex);
+                button.ariaLabel = `Jump to Testimonial ${i + 1}`;
+                button.addEventListener("click", () => showTestimonial(i));
+                dotsContainer.appendChild(button);
+            }
+        }
+
+        // Slide functions
+        function showTestimonial(index) {
+            currentIndex = index;
+            // Update slide position
+            testimonials.forEach((testimonial) => {
+                testimonial.style.transform = `translateX(${-index * 100}%)`;
+            });
+            // Update active dot
+            const dots = document.querySelectorAll(".dot");
+            dots.forEach((dot, i) => {
+                dot.classList.toggle("active", i === currentIndex);
+            });
+        }
+
+        function nextTestimonial() {
+            const nextIndex = (currentIndex + 1) % testimonials.length;
+            showTestimonial(nextIndex);
+        }
+
+        function prevTestimonial() {
+            const prevIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
+            showTestimonial(prevIndex);
+        }
+
+        // Initialize
+        document.addEventListener("DOMContentLoaded", function () {
+            renderDotButtons();
+            startAutoSlide();
+            initApp();
+        });
+    </script>
+</body>
+
+</html>

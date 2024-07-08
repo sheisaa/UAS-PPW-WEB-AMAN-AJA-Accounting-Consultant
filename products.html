@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Deklarasi dokumen HTML dengan bahasa Inggris -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Menentukan karakter set dokumen -->
+    <link rel="shortcut icon" type="x-icon" href="gambaricon.png"> <!-- Menentukan favicon untuk halaman -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Menentukan tampilan halaman yang responsif -->
+    <title>Aman Aja</title> <!-- Judul halaman yang ditampilkan di tab browser -->
+    <link rel="stylesheet" href="styles.css"> <!-- Menghubungkan halaman dengan file CSS eksternal -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- Menambahkan ikon dari Font Awesome -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+</head>
+
+<body style="background-color: #f7f7f7;">
+    <header class="py-2 mx-auto">
+        <nav class="d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <a href="index.html"> <!-- Tautan ke halaman beranda -->
+                    <img src="gambar.png" alt="Aman Aja Logo"> <!-- Logo -->
+                </a>
+            </div>
+            <div class="d-flex gap-4">
+                <a href="index.html">Home</a> <!-- Tautan ke halaman beranda -->
+                <a href="about.html">About</a> <!-- Tautan ke halaman tentang -->
+                <a href="products.html">Product</a> <!-- Tautan ke halaman produk -->
+                <a class="contact-button" href="contact.html">Contact Us</a>
+                <!-- Tautan ke halaman kontak dengan tombol bergaya -->
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <video autoplay muted loop id="heroVideo">
+            <!-- Menambahkan video yang diputar otomatis dan loop sebagai background -->
+            <source src="product.mp4" type="video/mp4"> <!-- Sumber video dengan format mp4 -->
+            Your browser does not support HTML5 video.
+            <!-- Pesan yang ditampilkan jika browser tidak mendukung video -->
+        </video>
+        <div class="hero-text">
+            <h1>Pelayanan kami</h1> <!-- Teks judul di atas video -->
+        </div>
+    </section>
+
+    <main>
+        <section class="services">
+            <div class="service-list row">
+                <div class="service-item col-5">
+                    <h2>Persiapan Pajak</h2> <!-- Judul layanan -->
+                    <p>Rp.3.000.000.00 JUTA per bulan</p> <!-- Harga layanan -->
+                    <p>Kami menyiapkan semua yang Anda butuhkan untuk pengembalian pajak Anda</p> <!-- Deskripsi layanan -->
+                    <a href="https://wa.me/6282282766504/?text=Halo%20saya%20ingin%20mengambil%20*Tax%20Preparation*"
+                        class="select">
+                        Select <!-- Tautan untuk memilih layanan dengan mengarahkan ke WhatsApp -->
+                    </a>
+                </div>
+                <div class="service-item col-5">
+                    <h2>Paket Pemula</h2>
+                    <p>Rp.2.500.000.00 per bulan</p>
+                    <p>Kami membangun model keuangan yang dapat Anda tawarkan kepada investor</p>
+                    <a href="https://wa.me/6282282766504/?text=Halo%20saya%20ingin%20mengambil%20*Start-up%20Package*"
+                        class="select">
+                        Select
+                    </a>
+                </div>
+                <div class="service-item col-5">
+                    <h2>Manajemen Kekayaan</h2>
+                    <p>Rp.2.800.000.00 per bulan</p>
+                    <p>Kami memberikan layanan konsultasi investasi yang bijaksana</p>
+                    <a href="https://wa.me/6282282766504/?text=Halo%20saya%20ingin%20mengambil%20*Wealth%20Management*"
+                        class="select">
+                        Select
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="faqs">
+            <h2>Pertanyaan Paling Banyak Diajukan Tentang Layanan Kami.</h2> <!-- Judul bagian FAQ -->
+
+            <section class="faq">
+                <div class="faq-item">
+                    <button class="buttonpress"> <!-- Tombol untuk membuka FAQ -->
+                        Layanan apa saja yang ditawarkan Konsultan Akuntansi Aman Aja?
+                        <i class="fa-solid fa-chevron-down"></i> <!-- Ikon panah ke bawah dari Font Awesome -->
+                    </button>
+                </div>
+                <div class="panel"> <!-- Panel yang muncul saat FAQ dibuka -->
+                    <p>Kami menawarkan rangkaian layanan komprehensif termasuk persiapan pajak, paket start-up, dan
+                        manajemen kekayaan. Tujuan kami adalah memberikan solusi yang disesuaikan untuk memenuhi kebutuhan finansial spesifik Anda
+                        kebutuhan.</p>
+                </div>
+            </section>
+
+            <section class="faq">
+                <div class="faq-item">
+                    <button class="buttonpress">
+                        Bagaimana Aman Aja Accounting Consultant dapat membantu persiapan perpajakan?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="panel">
+                    <p>Tim profesional kami yang berpengalaman akan memastikan bahwa pengembalian pajak Anda disiapkan secara akurat
+                        dan diajukan tepat waktu, memaksimalkan pemotongan Anda dan meminimalkan kewajiban Anda. Kami terus mendapatkan informasi terbaru
+                        dengan undang-undang perpajakan terbaru untuk memberi Anda saran terbaik.</p>
+                </div>
+            </section>
+
+            <section class="faq">
+                <div class="faq-item">
+                    <button class="buttonpress">
+                        Apa saja yang termasuk dalam paket start-up?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="panel">
+                    <p>Paket start-up kami mencakup pengembangan rencana bisnis, perkiraan keuangan, pembukuan
+                        pengaturan, dan panduan kepatuhan. Kami membantu bisnis baru membangun landasan finansial yang kuat
+                        memastikan keberhasilan jangka panjang.</p>
+                </div>
+            </section>
+
+            <section class="faq">
+                <div class="faq-item">
+                    <button class="buttonpress">
+                        Bagaimana cara kerja Wealth Management dengan Aman Aja Accounting Consultant?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="panel">
+                    <p>Layanan manajemen kekayaan kami melibatkan perencanaan keuangan yang dipersonalisasi, saran investasi, dan
+                        manajemen aset. Kami bekerja sama dengan Anda untuk memahami tujuan keuangan Anda dan menciptakan a
+                        strategi khusus untuk menumbuhkan dan melindungi kekayaan Anda.</p>
+                </div>
+            </section>
+
+            <section class="faq">
+                <div class="faq-item">
+                    <button class="buttonpress">
+                        Mengapa saya harus memilih Konsultan Akuntansi Aman Aja dibandingkan perusahaan lain?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="panel">
+                    <p>Di Konsultan Akuntansi Aman Aja, kami bangga dengan pendekatan kami yang berpusat pada klien,
+                        layanan yang dipersonalisasi, dan keahlian dalam peraturan keuangan lokal dan internasional. Kita
+                        komitmen terhadap keunggulan dan integritas memastikan bahwa Anda menerima layanan dengan kualitas terbaik
+                        disesuaikan dengan kebutuhan unik Anda.</p>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content d-flex justify-content-between align-items-center">
+            <div class="footer-logo">
+                <img src="gambar.png" alt="Aman Aja Logo"> <!-- Logo footer -->
+            </div>
+            <div class="footer-links">
+                <a href="#">Facebook</a> <!-- Tautan ke Facebook -->
+                <a href="#">Twitter</a> <!-- Tautan ke Twitter -->
+                <a href="#">Instagram</a> <!-- Tautan ke Instagram -->
+                <a href="#">LinkedIn</a> <!-- Tautan ke LinkedIn -->
+            </div>
+        </div>
+        <div class="footer-copyright mt-1">
+            &copy; 2024 Aman Aja Accounting Consultant <!-- Copyright -->
+        </div>
+    </footer>
+    
+    <script>
+        var acc = document.getElementsByClassName("buttonpress"); <!-- Mendapatkan semua elemen dengan kelas "buttonpress" -->
+        var i;
+    
+        for(i = 0; i < acc.length; i++){ <!-- Loop melalui semua elemen -->
+            acc[i].addEventListener("click", function (){ <!-- Menambahkan event listener untuk klik -->
+                this.classList.toggle("active"); <!-- Mengubah kelas elemen saat diklik -->
+                this.parentElement.classList.toggle("active"); <!-- Mengubah kelas elemen induk saat diklik -->
+    
+                var panel = this.parentElement.nextElementSibling; <!-- Mendapatkan panel yang terkait -->
+                if(panel.style.display === "block"){ <!-- Memeriksa apakah panel sudah terbuka -->
+                    panel.style.display = "none"; <!-- Menutup panel jika terbuka -->
+                } else {
+                    panel.style.display = "block"; <!-- Membuka panel jika tertutup -->
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

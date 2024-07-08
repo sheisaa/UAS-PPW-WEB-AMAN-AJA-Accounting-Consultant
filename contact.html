@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> <!-- Mengatur karakter encoding untuk dokumen -->
+    <link rel="shortcut icon" type="x-icon" href="gambaricon.png"> <!-- Menambahkan ikon untuk tab browser -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Mengatur tampilan responsif -->
+    <title>Aman Aja</title> <!-- Judul halaman -->
+    <link rel="stylesheet" href="styles.css"> <!-- Menghubungkan dokumen CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+</head>
+
+<body style="background-color: #f7f7f7;">
+    <header class="py-2 mx-auto">
+        <nav class="d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <a href="index.html"> <!-- Tautan ke halaman beranda -->
+                    <img src="gambar.png" alt="Aman Aja Logo"> <!-- Logo -->
+                </a>
+            </div>
+            <div class="d-flex gap-4">
+                <a href="index.html">Home</a> <!-- Tautan ke halaman beranda -->
+                <a href="about.html">About</a> <!-- Tautan ke halaman tentang -->
+                <a href="products.html">Product</a> <!-- Tautan ke halaman produk -->
+                <a class="contact-button" href="contact.html">Contact Us</a>
+                <!-- Tautan ke halaman kontak dengan tombol bergaya -->
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact">
+            <h1>Contact Us</h1> <!-- Judul kontak -->
+            <form>
+                <div class="form-group">
+                    <label for="first-name">Nama depan</label> <!-- Label untuk nama depan -->
+                    <input type="text" id="first-name" name="first-name" required> <!-- Input untuk nama depan -->
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Nama keluarga</label> <!-- Label untuk nama belakang -->
+                    <input type="text" id="last-name" name="last-name" required> <!-- Input untuk nama belakang -->
+                </div>
+                <div class="form-group">
+                    <label for="email">Alamat email</label> <!-- Label untuk alamat email -->
+                    <input type="email" id="email" name="email" required> <!-- Input untuk alamat email -->
+                </div>
+                <div class="form-group">
+                    <label for="message">Pesan Anda</label> <!-- Label untuk pesan -->
+                    <textarea id="message" name="message" required></textarea> <!-- Textarea untuk pesan -->
+                </div>
+                <button type="submit">Kirim</button> <!-- Tombol submit -->
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content d-flex justify-content-between align-items-center">
+            <div class="footer-logo">
+                <img src="gambar.png" alt="Aman Aja Logo"> <!-- Logo footer -->
+            </div>
+            <div class="footer-links">
+                <a href="#">Facebook</a> <!-- Tautan ke Facebook -->
+                <a href="#">Twitter</a> <!-- Tautan ke Twitter -->
+                <a href="#">Instagram</a> <!-- Tautan ke Instagram -->
+                <a href="#">LinkedIn</a> <!-- Tautan ke LinkedIn -->
+            </div>
+        </div>
+        <div class="footer-copyright mt-1">
+            &copy; 2024 Aman Aja Accounting Consultant <!-- Copyright -->
+        </div>
+    </footer>
+</body>
+
+</html>

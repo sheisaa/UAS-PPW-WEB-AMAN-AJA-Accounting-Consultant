@@ -1,0 +1,1265 @@
+body {
+    font-family: Arial, sans-serif;
+    /* Mengatur jenis font untuk seluruh halaman */
+    margin: 0;
+    /* Mengatur margin halaman menjadi 0 */
+    padding: 0;
+    /* Mengatur padding halaman menjadi 0 */
+}
+
+header {
+    position: fixed;
+    /* Menjadikan header tetap di posisi teratas saat di-scroll */
+    top: 0;
+    /* Menempatkan header di bagian atas halaman */
+    width: 100%;
+    /* Mengatur lebar header menjadi 100% */
+    background-color: #ffffff;
+    /* Mengatur warna latar belakang header */
+    color: white;
+    /* Mengatur warna teks dalam header */
+    /* padding: 10px 20px; */
+    /* Memberikan padding atas dan bawah sebesar 10px, kiri dan kanan 20px */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* Menambahkan bayangan di bawah header */
+    z-index: 1000;
+    /* Memastikan header berada di atas elemen lainnya */
+}
+
+nav {
+    /* display: flex; */
+    /* Menampilkan elemen dalam nav secara fleksibel */
+    /* justify-content: space-between; */
+    /* Menyebarkan elemen dalam nav secara merata */
+    /* align-items: center; */
+    /* Menyelaraskan elemen dalam nav secara vertikal */
+    padding: 0px 320px;
+    /* Memberikan padding kiri dan kanan sebesar 320px */
+}
+
+nav .logo img {
+    height: 60px;
+    /* Mengatur tinggi logo */
+}
+
+/* nav .nav-links { */
+/* display: flex; */
+/* Menampilkan link dalam nav secara fleksibel */
+/* gap: 20px; */
+/* Memberikan jarak antara link */
+/* } */
+
+nav a {
+    text-decoration: none;
+    /* Menghilangkan garis bawah pada link */
+    color: #030303;
+    /* Mengatur warna teks pada link */
+    font-weight: bold;
+    /* Mengatur teks menjadi tebal */
+    padding: 10px 0px;
+    /* Memberikan padding atas dan bawah sebesar 10px */
+}
+
+nav a:hover {
+    color: #ffc400;
+    /* Mengubah warna teks pada link saat di-hover */
+    transition: 0.3s ease;
+    /* Menambahkan transisi smooth saat di-hover */
+}
+
+.contact-button {
+    background-color: rgb(5, 5, 5);
+    /* Mengatur warna latar belakang tombol kontak */
+    color: white;
+    /* Mengatur warna teks tombol kontak */
+    border: none;
+    /* Menghilangkan border tombol kontak */
+    padding: 10px 20px;
+    /* Memberikan padding pada tombol kontak */
+    cursor: pointer;
+    /* Mengubah kursor saat di-hover */
+    border-radius: 6px;
+    /* Membuat sudut tombol menjadi melengkung */
+}
+
+.contact-button:hover {
+    background-color: #333;
+    /* Mengubah warna latar belakang tombol saat di-hover */
+    transition: 0.5s ease;
+    /* Menambahkan transisi smooth saat di-hover */
+    color: #ffc400;
+    /* Mengubah warna teks tombol saat di-hover */
+}
+
+.hero {
+    position: relative;
+    /* Mengatur posisi elemen relatif terhadap elemen lainnya */
+    background-color: #000000;
+    /* Mengatur warna latar belakang hero */
+    /* margin-top: 80px; */
+    /* Memberikan margin atas sebesar 80px */
+    padding: 180px;
+    /* Memberikan padding dalam hero */
+    text-align: center;
+    /* Menyelaraskan teks di tengah */
+    overflow: hidden;
+    /* Menyembunyikan elemen yang keluar dari batas */
+}
+
+#heroVideo {
+    position: absolute;
+    /* Mengatur posisi video absolut di dalam hero */
+    top: 50%;
+    /* Menempatkan video di tengah secara vertikal */
+    left: 50%;
+    /* Menempatkan video di tengah secara horizontal */
+    width: 100%;
+    /* Mengatur lebar video menjadi 100% */
+    height: 100%;
+    /* Mengatur tinggi video menjadi 100% */
+    object-fit: cover;
+    /* Mengatur video untuk menutupi seluruh elemen */
+    transform: translate(-50%, -50%);
+    /* Menempatkan video di pusat */
+    z-index: 1;
+    /* Mengatur video berada di bawah elemen teks */
+    opacity: 0.4;
+    /* Menambahkan transparansi pada video */
+}
+
+.hero-text {
+    position: relative;
+    /* Mengatur posisi teks relatif terhadap elemen lainnya */
+    z-index: 1;
+    /* Memastikan teks berada di atas video */
+    /* padding: 0px 20px; */
+    /* Memberikan padding kiri dan kanan pada teks */
+}
+
+.hero h1 {
+    margin: 4rem;
+    /* Memberikan margin pada heading */
+    font-size: 2.2rem;
+    /* Mengatur ukuran font pada heading */
+    color: rgb(255, 255, 255);
+    /* Mengatur warna teks pada heading */
+}
+
+.hero p {
+    color: rgb(255, 255, 255);
+    /* Mengatur warna teks pada paragraf */
+    font-size: 1.5rem;
+    /* Mengatur ukuran font pada paragraf */
+}
+
+.hero-buttons {
+    margin-top: 20px;
+    /* Memberikan margin atas pada tombol */
+    display: flex;
+    /* Menampilkan tombol secara fleksibel */
+    gap: 10px;
+    /* Memberikan jarak antara tombol */
+    justify-content: center;
+    /* Menyelaraskan tombol di tengah */
+}
+
+.buttonlearnmore {
+    display: inline-block;
+    /* Menampilkan tombol sebagai blok inline */
+    padding: 10px 60px;
+    /* Memberikan padding pada tombol */
+    background-color: #000000;
+    /* Mengatur warna latar belakang tombol */
+    color: white;
+    /* Mengatur warna teks tombol */
+    text-align: center;
+    /* Menyelaraskan teks di tengah tombol */
+    text-decoration: none;
+    /* Menghilangkan garis bawah pada teks tombol */
+    border: none;
+    /* Menghilangkan border tombol */
+    border-radius: 8px;
+    /* Membuat sudut tombol melengkung */
+    cursor: pointer;
+    /* Mengubah kursor saat di-hover */
+    transition: 0.5s ease;
+    /* Menambahkan transisi smooth saat di-hover */
+    font-weight: bold;
+    /* Membuat teks tombol menjadi tebal */
+}
+
+.buttonlearnmore:hover {
+    background-color: #333;
+    /* Mengubah warna latar belakang tombol saat di-hover */
+    color: #ffc400;
+    /* Mengubah warna teks tombol saat di-hover */
+}
+
+main {
+    padding: 0px 320px;
+    /* Memberikan padding kiri dan kanan pada main */
+}
+
+.mainpadding {
+    padding: 120px 320px;
+    /* Memberikan padding atas, bawah, kiri, dan kanan pada mainpadding */
+}
+
+.company-profile,
+.content {
+    border-radius: 8px;
+    /* Membuat sudut elemen menjadi melengkung */
+    padding: 20px;
+    /* Memberikan padding pada elemen */
+    margin: 20px 0;
+    /* Memberikan margin atas dan bawah pada elemen */
+}
+
+.company-profile {
+    display: flex;
+    /* Menampilkan elemen secara fleksibel */
+    justify-content: space-between;
+    /* Menyebarkan elemen secara merata */
+    align-items: center;
+    /* Menyelaraskan elemen secara vertikal */
+    margin: 50px 0;
+    /* Memberikan margin atas dan bawah pada company-profile */
+}
+
+.text-section {
+    flex: 1;
+    /* Memungkinkan teks untuk mengambil ruang yang tersisa */
+    padding-right: 20px;
+    /* Memberikan padding kanan pada teks */
+    padding-left: 60px;
+    /* Memberikan padding kiri pada teks */
+}
+
+.buttonabout {
+    display: inline-block;
+    /* Menampilkan tombol sebagai blok inline */
+    padding: 10px 20px;
+    /* Memberikan padding pada tombol */
+    background-color: #000000;
+    /* Mengatur warna latar belakang tombol */
+    color: white;
+    /* Mengatur warna teks tombol */
+    text-align: center;
+    /* Menyelaraskan teks di tengah tombol */
+    text-decoration: none;
+    /* Menghilangkan garis bawah pada teks tombol */
+    border: none;
+    /* Menghilangkan border tombol */
+    border-radius: 8px;
+    /* Membuat sudut tombol melengkung */
+    cursor: pointer;
+    /* Mengubah kursor saat di-hover */
+    transition: 0.5s ease;
+    /* Menambahkan transisi smooth saat di-hover */
+    font-weight: bold;
+    /* Membuat teks tombol menjadi tebal */
+}
+
+.buttonabout:hover {
+    background-color: #333;
+    /* Mengubah warna latar belakang tombol saat di-hover */
+    color: #ffc400;
+    /* Mengubah warna teks tombol saat di-hover */
+}
+
+.text-section h1 {
+    margin-top: 0px;
+    /* Mengatur margin atas pada heading menjadi 0 */
+    margin-bottom: 30px;
+    /* Memberikan margin bawah pada heading */
+}
+
+.text-section p {
+    font-size: 1.20rem;
+    /* Mengatur ukuran font pada paragraf */
+    margin-bottom: 30px;
+    /* Memberikan margin bawah pada paragraf */
+}
+
+.text-section button {
+    background-color: black;
+    /* Mengatur warna latar belakang tombol */
+    color: white;
+    /* Mengatur warna teks tombol */
+    border: none;
+    /* Menghilangkan border tombol */
+    padding: 10px 20px;
+    /* Memberikan padding pada tombol */
+    cursor: pointer;
+    /* Mengubah kursor saat di-hover */
+    border-radius: 8px;
+    /* Membuat sudut tombol melengkung */
+    margin-top: 20px;
+    /* Memberikan margin atas pada tombol */
+    font-weight: bold;
+    /* Membuat teks tombol menjadi tebal */
+}
+
+.text-section button:hover {
+    color: #ffc400;
+    /* Mengubah warna teks tombol saat di-hover */
+}
+
+.image-section {
+    flex: 1;
+    /* Memungkinkan gambar untuk mengambil ruang yang tersisa */
+    text-align: center;
+    /* Menyelaraskan gambar di tengah */
+    overflow: hidden;
+    /* Menyembunyikan bagian gambar yang keluar dari batas */
+}
+
+.image-section img {
+    width: 80%;
+    /* Mengatur lebar gambar menjadi 80% */
+    height: auto;
+    /* Mengatur tinggi gambar secara otomatis */
+    border-radius: 8px;
+    /* Membuat sudut gambar melengkung */
+}
+
+.content {
+    display: flex;
+    /* Menampilkan elemen secara fleksibel */
+    justify-content: center;
+    /* Menyelaraskan elemen di tengah */
+    flex-wrap: wrap;
+    /* Membungkus elemen dalam baris baru jika diperlukan */
+}
+
+.content-item {
+    flex: 1;
+    /* Memungkinkan elemen untuk mengambil ruang yang tersisa */
+    text-align: center;
+    /* Menyelaraskan teks di tengah */
+    overflow: auto;
+    /* Menambahkan scrollbar jika konten meluap */
+    padding: 0px;
+    /* Menghilangkan padding pada content-item */
+}
+
+.sub-content {
+    gap: 30px;
+    /* Memberikan jarak antara elemen dalam sub-content */
+    display: flex;
+    /* Menampilkan elemen secara fleksibel */
+    justify-content: space-between;
+    /* Menyebarkan elemen secara merata */
+}
+
+.sub-item {
+    border-radius: 16px;
+    /* Membuat sudut elemen melengkung */
+    background-color: white;
+    /* Mengatur warna latar belakang elemen */
+    width: 35%;
+    /* Mengatur lebar elemen */
+    padding: 20px;
+    /* Memberikan padding pada elemen */
+}
+
+.sub-item h3 {
+    margin-top: 0;
+    /* Menghilangkan margin atas pada heading */
+}
+
+.sub-item p {
+    font-size: 1.10rem;
+    /* Mengatur ukuran font pada paragraf */
+}
+
+button {
+    cursor: pointer;
+    /* Mengubah kursor saat di-hover */
+    border: none;
+    /* Menghilangkan border pada tombol */
+}
+
+.slider2 h1 {
+    text-align: center;
+    /* Menyelaraskan teks di tengah */
+    margin-top: 20px;
+    /* Memberikan margin atas pada heading */
+    margin-bottom: 35px;
+    /* Memberikan margin bawah pada heading */
+}
+
+.slider {
+    width: 100%;
+    /* Mengatur lebar slider menjadi 100% */
+    overflow: hidden;
+    /* Menyembunyikan elemen yang keluar dari batas */
+}
+
+.slide-track {
+    display: flex;
+    /* Menampilkan elemen secara fleksibel */
+    animation: scroll 20s linear infinite;
+    /* Menambahkan animasi scroll secara terus-menerus */
+    align-items: center;
+    /* Menyelaraskan elemen secara vertikal */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.slide {
+    min-width: 20%;
+    /* Mengatur lebar minimum slide */
+    display: flex;
+    /* Menampilkan elemen secara fleksibel */
+    align-items: center;
+    /* Menyelaraskan elemen secara vertikal */
+    justify-content: center;
+    /* Menyelaraskan elemen di tengah */
+    box-sizing: border-box;
+    /* Mengatur ukuran box sesuai dengan border */
+    padding: 10px;
+    /* Memberikan padding pada slide */
+}
+
+.slide img {
+    width: 100%;
+    /* Mengatur lebar gambar menjadi 100% */
+    border-radius: 10px;
+    /* Membuat sudut gambar melengkung */
+    gap: 10px;
+    /* Memberikan jarak antara gambar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Menambahkan bayangan pada gambar */
+    display: block;
+    /* Menampilkan gambar sebagai blok */
+    margin: 0 auto;
+    /* Pusatkan gambar */
+}
+
+.testi {
+    padding: 40px 20px;
+    /* Memberikan padding pada testi */
+}
+
+.testimonial-slider {
+    max-width: 100%;
+    /* Mengatur lebar maksimum slider testimonial */
+    width: 100%;
+    /* Mengatur lebar slider testimonial */
+    background-color: var(--light-color);
+    /* Mengatur warna latar belakang slider */
+    border-radius: 10px;
+    /* Membuat sudut slider melengkung */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    /* Menambahkan bayangan pada slider */
+    position: relative;
+    /* Mengatur posisi slider relatif terhadap elemen lainnya */
+    overflow: hidden;
+    /* Menyembunyikan elemen yang keluar dari batas */
+}
+
+.testi h1 {
+    text-align: center;
+    /* Menyelaraskan teks di tengah */
+}
+
+.testimonial-list {
+    display: flex;
+    /* Menampilkan elemen secara fleksibel */
+    overflow: hidden;
+    /* Menyembunyikan elemen yang keluar dari batas */
+}
+
+.testimonial {
+    flex: 1 0 100%;
+    /* Mengatur elemen testimonial untuk mengambil ruang yang tersedia */
+    text-align: center;
+    /* Menyelaraskan teks di tengah */
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    /* Menambahkan transisi smooth pada transformasi */
+}
+
+.testimonial .bi-quote {
+    font-size: 2rem;
+    /* Mengatur ukuran font pada ikon kutipan */
+    color: var(--sunglow);
+    /* Mengatur warna pada ikon kutipan */
+    opacity: 0.75;
+    /* Menambahkan transparansi pada ikon kutipan */
+}
+
+.testimonial blockquote {
+    font-size: 1.25rem;
+    /* Mengatur ukuran font pada kutipan */
+    padding: 10px;
+    /* Memberikan padding pada kutipan */
+    margin-top: 5%;
+    /* Memberikan margin atas pada kutipan */
+}
+
+.user-info {
+    margin-top: 10px;
+    /* Memberikan margin atas pada user-info */
+    display: flex;
+    /* Menampilkan elemen secara fleksibel */
+    align-items: center;
+    /* Menyelaraskan elemen secara vertikal */
+    justify-content: center;
+    /* Menyelaraskan elemen di tengah */
+    gap: 10px;
+    /* Memberikan jarak antara elemen */
+    margin-bottom: 15px;
+    /* Memberikan margin bawah pada user-info */
+}
+
+.user-info img {
+    width: 80px;
+    /* Mengatur lebar gambar user */
+    border-radius: 20%;
+    /* Membuat sudut gambar user melengkung */
+}
+
+.user-details {
+    display: flex;
+    /* Menampilkan elemen secara fleksibel */
+    padding: 10px;
+    /* Memberikan padding pada user-details */
+    flex-direction: column;
+    /* Mengatur arah elemen secara kolom */
+    align-items: flex-start;
+    /* Menyelaraskan elemen di awal */
+}
+
+.user-details .name {
+    font-size: 1.35rem;
+    /* Mengatur ukuran font pada nama */
+    font-weight: bold;
+    /* Membuat teks nama menjadi tebal */
+    color: black;
+    /* Mengatur warna teks pada nama */
+    text-align: center;
+    /* Menyelaraskan teks di tengah */
+    margin: 0px;
+    /* Menghilangkan margin pada nama */
+}
+
+.user-details .company {
+    color: black;
+    /* Mengatur warna teks pada nama perusahaan */
+    margin: 10px 0px;
+    /* Memberikan margin atas dan bawah pada nama perusahaan */
+}
+
+.nav {
+    position: absolute;
+    /* Mengatur posisi elemen absolut di dalam slider */
+    top: 50%;
+    /* Menempatkan elemen di tengah secara vertikal */
+    transform: translateY(-50%);
+    /* Mengatur posisi elemen di tengah */
+    width: 42px;
+    /* Mengatur lebar elemen */
+    height: 42px;
+    /* Mengatur tinggi elemen */
+    font-size: 1.5rem;
+    /* Mengatur ukuran font elemen */
+    border-radius: 50%;
+    /* Membuat sudut elemen melengkung */
+    background-color: transparent;
+    /* Mengatur warna latar belakang elemen */
+    color: white;
+    /* Mengatur warna teks pada elemen */
+    transition: 0.3s;
+    /* Menambahkan transisi smooth pada elemen */
+    opacity: 0;
+    /* Menambahkan transparansi pada elemen */
+}
+
+.testimonial-slider:hover .nav {
+    opacity: 1;
+    /* Mengatur opasitas elemen menjadi penuh saat di-hover */
+}
+
+.nav:hover {
+    background-color: var(--dark-cyan);
+    /* Mengatur warna latar belakang elemen saat di-hover */
+    color: var(--light-color);
+    /* Mengatur warna teks pada elemen saat di-hover */
+}
+
+.nav.prev {
+    left: 10px;
+    /* Menempatkan elemen di kiri */
+}
+
+.nav.next {
+    right: 10px;
+    /* Menempatkan elemen di kanan */
+}
+
+.dots-container {
+    text-align: center;
+    /* Menyelaraskan elemen di tengah */
+}
+
+.dot {
+    width: 10px;
+    /* Mengatur lebar elemen */
+    height: 10px;
+    /* Mengatur tinggi elemen */
+    border-radius: 5px;
+    /* Membuat sudut elemen melengkung */
+    margin-inline: 5px;
+    /* Memberikan margin kiri dan kanan pada elemen */
+    background-color: transparent;
+    /* Mengatur warna latar belakang elemen */
+    transition: width 0.5s;
+    /* Menambahkan transisi smooth pada lebar elemen */
+    display: none;
+    /* Menyembunyikan elemen */
+}
+
+.dot.active {
+    display: none;
+    /* Menyembunyikan elemen */
+    width: 30px;
+    /* Mengatur lebar elemen */
+    background-color: var(--paynes-gray);
+    /* Mengatur warna latar belakang elemen */
+}
+
+.extra-content {
+    margin-top: 80px;
+    /* Memberikan margin atas pada elemen */
+    position: relative;
+    /* Mengatur posisi elemen relatif terhadap elemen lainnya */
+    padding: 0px;
+    /* Menghilangkan padding pada elemen */
+    background-image: url('extracontent.jpeg');
+    /* Mengatur gambar latar belakang elemen */
+    background-size: cover;
+    /* Mengatur gambar latar belakang untuk menutupi seluruh elemen */
+    background-position: center;
+    /* Menempatkan gambar di tengah elemen */
+    color: white;
+    /* Mengatur warna teks pada elemen */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Menambahkan bayangan pada teks */
+}
+
+.extra-content::before {
+    content: "";
+    /* Menambahkan elemen pseudo sebelum elemen */
+    position: absolute;
+    /* Mengatur posisi elemen absolut di dalam extra-content */
+    top: 0;
+    /* Menempatkan elemen di atas */
+    left: 0;
+    /* Menempatkan elemen di kiri */
+    width: 100%;
+    /* Mengatur lebar elemen */
+    height: 100%;
+    /* Mengatur tinggi elemen */
+    background: rgba(0, 0, 0, 0.5);
+    /* Mengatur warna latar belakang elemen */
+    z-index: 1;
+    /* Memastikan elemen berada di bawah elemen lainnya */
+    pointer-events: none;
+    /* Menghilangkan interaksi dengan elemen */
+}
+
+.extra-content p {
+    position: relative;
+    /* Mengatur posisi elemen relatif terhadap elemen lainnya */
+    z-index: 1;
+    /* Memastikan elemen berada di atas elemen lainnya */
+    padding: 40px 320px;
+    /* Memberikan padding kiri dan kanan pada elemen */
+    font-size: 1.20rem;
+    /* Mengatur ukuran font pada paragraf */
+}
+
+footer {
+    background-color: #ffffff;
+    /* Mengatur warna latar belakang footer */
+    color: rgb(22, 21, 21);
+    /* Mengatur warna teks footer */
+    padding: 20px 0;
+    /* Memberikan padding atas dan bawah pada footer */
+    text-align: center;
+    /* Menyelaraskan teks di tengah */
+}
+
+.footer-content {
+    /* display: flex; */
+    /* Menampilkan elemen secara fleksibel */
+    /* justify-content: space-between; */
+    /* Menyebarkan elemen secara merata */
+    /* align-items: center; */
+    /* Menyelaraskan elemen secara vertikal */
+    font-weight: bold;
+    /* Membuat teks menjadi tebal */
+    padding: 0 320px;
+    /* Memberikan padding kiri dan kanan pada footer */
+    max-width: 1200px;
+    /* Mengatur lebar maksimum konten footer */
+    margin: 0 auto;
+    /* Pusatkan konten footer */
+}
+
+.footer-logo img {
+    max-height: 50px;
+    /* Mengatur tinggi maksimum logo */
+}
+
+.footer-links a {
+    color: rgb(0, 0, 0);
+    /* Mengatur warna teks tautan */
+    text-decoration: none;
+    /* Menghilangkan garis bawah pada tautan */
+    margin: 0 10px;
+    /* Memberikan margin kiri dan kanan pada tautan */
+    transition: color 0.3s;
+    /* Menambahkan transisi smooth pada warna tautan */
+}
+
+.footer-links a:hover {
+    color: #f39c12;
+    /* Mengubah warna teks tautan saat di-hover */
+}
+
+.footer-copyright {
+    /* margin-top: 10px; */
+    /* Memberikan margin atas pada elemen */
+    font-size: 14px;
+    /* Mengatur ukuran font pada elemen */
+}
+
+.services {
+    text-align: center;
+    /* Menyelaraskan teks di tengah */
+    padding: 50px 20px;
+    /* Memberikan padding pada services */
+}
+
+.services h1 {
+    margin: 0;
+    /* Menghilangkan margin pada heading */
+}
+
+.service-image img {
+    width: 100%;
+    /* Mengatur lebar gambar menjadi 100% */
+    height: auto;
+    /* Mengatur tinggi gambar secara otomatis */
+    max-width: 600px;
+    /* Mengatur lebar maksimum gambar */
+    margin: 20px 0;
+    /* Memberikan margin atas dan bawah pada gambar */
+    border-radius: 8px;
+    /* Membuat sudut gambar melengkung */
+}
+
+.service-list {
+    display: flex;
+    /* Menampilkan elemen secara fleksibel */
+    justify-content: center;
+    /* Menyelaraskan elemen di tengah */
+    gap: 20px;
+    /* Memberikan jarak antara elemen */
+    flex-wrap: wrap;
+    /* Membungkus elemen dalam baris baru jika diperlukan */
+}
+
+.service-item {
+    background-color: #fff;
+    /* Mengatur warna latar belakang elemen */
+    border-radius: 8px;
+    /* Membuat sudut elemen melengkung */
+    padding: 20px;
+    /* Memberikan padding pada elemen */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Menambahkan bayangan pada elemen */
+    max-width: 300px;
+    /* Mengatur lebar maksimum elemen */
+    text-align: center;
+    /* Menyelaraskan teks di tengah */
+}
+
+.service-item h2 {
+    margin-top: 0;
+    /* Menghilangkan margin atas pada heading */
+}
+
+.service-item p {
+    margin: 10px 0;
+    /* Memberikan margin atas dan bawah pada paragraf */
+}
+
+.select {
+    display: inline-block;
+    /* Menampilkan tombol sebagai blok inline */
+    padding: 10px 70px;
+    /* Memberikan padding pada tombol */
+    background-color: #000000;
+    /* Mengatur warna latar belakang tombol */
+    color: white;
+    /* Mengatur warna teks tombol */
+    text-align: center;
+    /* Menyelaraskan teks di tengah tombol */
+    text-decoration: none;
+    /* Menghilangkan garis bawah pada teks tombol */
+    border: none;
+    /* Menghilangkan border tombol */
+    border-radius: 8px;
+    /* Membuat sudut tombol melengkung */
+    cursor: pointer;
+    /* Mengubah kursor saat di-hover */
+    transition: 0.5s ease;
+    /* Menambahkan transisi smooth pada elemen */
+    font-weight: bold;
+    /* Membuat teks tombol menjadi tebal */
+}
+
+.select:hover {
+    background-color: #333;
+    /* Mengubah warna latar belakang tombol saat di-hover */
+    color: #ffc400;
+    /* Mengubah warna teks tombol saat di-hover */
+}
+
+.faqs {
+    background-color: #fff;
+    /* Mengatur warna latar belakang elemen */
+    border-radius: 8px;
+    /* Membuat sudut elemen melengkung */
+    padding: 20px;
+    /* Memberikan padding pada elemen */
+    margin: 20px 0;
+    /* Memberikan margin atas dan bawah pada elemen */
+}
+
+.buttonpress {
+    background-color: white;
+    /* Mengatur warna latar belakang tombol */
+    color: black;
+    /* Mengatur warna teks tombol */
+    cursor: pointer;
+    /* Mengubah kursor saat di-hover */
+    font-size: 1rem;
+    /* Mengatur ukuran font tombol */
+    width: 100%;
+    /* Mengatur lebar tombol */
+    border: none;
+    /* Menghilangkan border tombol */
+    outline: none;
+    /* Menghilangkan outline tombol */
+    transition: 0.5s;
+    /* Menambahkan transisi smooth pada tombol */
+    display: flex;
+    /* Menampilkan elemen secara fleksibel */
+    justify-content: space-between;
+    /* Menyebarkan elemen secara merata */
+    align-items: center;
+    /* Menyelaraskan elemen secara vertikal */
+}
+
+.buttonpress i {
+    font-size: 1.2rem;
+    /* Mengatur ukuran font pada ikon */
+}
+
+.active,
+.buttonpress:hover {
+    background-color: #333;
+    /* Mengubah warna latar belakang tombol saat aktif atau di-hover */
+    color: #ffc400;
+    /* Mengubah warna teks tombol saat aktif atau di-hover */
+}
+
+.panel {
+    padding: 0 18px;
+    /* Memberikan padding kiri dan kanan pada panel */
+    background-color: white;
+    /* Mengatur warna latar belakang panel */
+    display: none;
+    /* Menyembunyikan panel */
+    overflow: hidden;
+    /* Menyembunyikan elemen yang keluar dari batas */
+    background-color: #e5e5e5;
+    /* Mengatur warna latar belakang panel */
+    padding: 0 2rem 2.5rem 2rem;
+    /* Memberikan padding pada panel */
+}
+
+.panel p {
+    color: black;
+    /* Mengatur warna teks pada paragraf */
+    font-size: 1rem;
+    /* Mengatur ukuran font pada paragraf */
+    line-height: 1.4;
+    /* Mengatur tinggi baris pada paragraf */
+}
+
+.faq {
+    margin: 10px 0;
+    /* Memberikan margin atas dan bawah pada elemen */
+}
+
+.faq:active {
+    border: none;
+    /* Menghilangkan border pada elemen saat aktif */
+}
+
+.contact {
+    margin-top: 60px;
+    /* Memberikan margin atas pada elemen */
+    margin-bottom: 50px;
+    /* Memberikan margin bawah pada elemen */
+    text-align: center;
+    /* Menyelaraskan teks di tengah */
+    padding: 50px 20px;
+    /* Memberikan padding pada elemen */
+}
+
+.contact h1 {
+    margin: 0 0 20px 0;
+    /* Memberikan margin atas 0, bawah 20px pada heading */
+}
+
+form {
+    max-width: 600px;
+    /* Mengatur lebar maksimum form */
+    margin: 0 auto;
+    /* Pusatkan form */
+    background-color: #fff;
+    /* Mengatur warna latar belakang form */
+    padding: 20px;
+    /* Memberikan padding pada form */
+    border-radius: 8px;
+    /* Membuat sudut form melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Menambahkan bayangan pada form */
+}
+
+.form-group {
+    margin-bottom: 15px;
+    /* Memberikan margin bawah pada grup form */
+    text-align: left;
+    /* Menyelaraskan teks di kiri */
+}
+
+.form-group label {
+    display: block;
+    /* Menampilkan label sebagai blok */
+    margin-bottom: 5px;
+    /* Memberikan margin bawah pada label */
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    /* Mengatur lebar input dan textarea menjadi 100% */
+    padding: 10px;
+    /* Memberikan padding pada input dan textarea */
+    border: 1px solid #ddd;
+    /* Mengatur border pada input dan textarea */
+    border-radius: 8px;
+    /* Membuat sudut input dan textarea melengkung */
+}
+
+button {
+    background-color: black;
+    /* Mengatur warna latar belakang tombol */
+    color: white;
+    /* Mengatur warna teks tombol */
+    border: none;
+    /* Menghilangkan border tombol */
+    padding: 10px 20px;
+    /* Memberikan padding pada tombol */
+    cursor: pointer;
+    /* Mengubah kursor saat di-hover */
+    border-radius: 4px;
+    /* Membuat sudut tombol melengkung */
+    transition: background-color 0.3s ease;
+    /* Menambahkan transisi smooth pada tombol */
+    display: block;
+    /* Menampilkan tombol sebagai blok */
+    width: 100%;
+    /* Mengatur lebar tombol menjadi 100% */
+    font-size: 16px;
+    /* Mengatur ukuran font tombol */
+    font-weight: bold;
+    /* Membuat teks tombol menjadi tebal */
+}
+
+button:hover {
+    background-color: #333;
+    /* Mengubah warna latar belakang tombol saat di-hover */
+}
+
+.containerauthor {
+    max-width: 1200px;
+    /* Mengatur lebar maksimum container */
+    margin: 0 auto;
+    /* Pusatkan container */
+    padding: 20px;
+    /* Memberikan padding pada container */
+}
+
+section {
+    padding: 20px 0;
+    /* Memberikan padding atas dan bawah pada section */
+}
+
+.about,
+.mission,
+.service {
+    background-color: #fff;
+    /* Mengatur warna latar belakang elemen */
+    border-radius: 8px;
+    /* Membuat sudut elemen melengkung */
+    /* padding: 20px; */
+    /* Memberikan padding pada elemen */
+    margin: 20px 0;
+    /* Memberikan margin atas dan bawah pada elemen */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Menambahkan bayangan pada elemen */
+}
+
+section h2 {
+    margin-top: 0;
+    /* Menghilangkan margin atas pada heading */
+}
+
+.team-member {
+    margin-bottom: 20px;
+    /* Memberikan margin bawah pada elemen */
+}
+
+.container {
+    text-align: center;
+    /* Menyelaraskan teks di tengah */
+    margin: 20px;
+    /* Memberikan margin pada container */
+}
+
+.authors {
+    /* display: flex; */
+    /* Menampilkan elemen secara fleksibel */
+    /* justify-content: center; */
+    /* Menyelaraskan elemen di tengah */
+    /* gap: 20px; */
+    /* Memberikan jarak antara elemen */
+    margin-top: 40px;
+    /* Memberikan margin atas pada elemen */
+    flex-wrap: wrap;
+    /* Membungkus elemen dalam baris baru jika diperlukan */
+}
+
+.authors {
+    /* display: flex; */
+    /* Menampilkan elemen secara fleksibel */
+    /* justify-content: space-around; */
+    /* Menyebarkan elemen secara merata */
+    flex-wrap: wrap;
+    /* Membungkus elemen dalam baris baru jika diperlukan */
+    margin: 20px 0;
+    /* Memberikan margin atas dan bawah pada elemen */
+}
+
+.author {
+
+    /* Mengatur warna latar belakang elemen */
+    border-radius: 8px;
+    /* Membuat sudut elemen melengkung */
+    padding: 20px;
+    /* Memberikan padding pada elemen */
+    width: 100%;
+    /* Mengatur lebar elemen */
+    max-width: 300px;
+    /* Mengatur lebar maksimum elemen */
+    text-align: center;
+    /* Menyelaraskan teks di tengah */
+    transition: background-color 0.8s;
+    /* Menambahkan transisi smooth pada elemen */
+}
+
+.author:hover {
+    background-color: rgb(223, 217, 217);
+    /* Mengubah warna latar belakang elemen saat di-hover */
+    cursor: pointer;
+    /* Mengubah kursor saat di-hover */
+}
+
+.author img {
+    width: 100px;
+    /* Mengatur lebar gambar */
+    height: 100px;
+    /* Mengatur tinggi gambar */
+    border-radius: 50%;
+    /* Membuat gambar menjadi lingkaran */
+}
+
+.author h3 {
+    font-size: 1.2em;
+    /* Mengatur ukuran font heading */
+    margin: 10px 0;
+    /* Memberikan margin atas dan bawah pada heading */
+    color: #000000;
+    /* Mengatur warna teks pada heading */
+}
+
+.author p {
+    font-size: 0.9em;
+    /* Mengatur ukuran font paragraf */
+    color: #000000;
+    /* Mengatur warna teks pada paragraf */
+}
+
+.author a {
+    text-decoration: none;
+    /* Menghilangkan garis bawah pada tautan */
+    color: #000000;
+    /* Mengatur warna teks pada tautan */
+    font-size: 0.9em;
+    /* Mengatur ukuran font pada tautan */
+}
+
+.contact-call {
+    background-color: #f9f9f9;
+    /* Mengatur warna latar belakang elemen */
+    padding: 40px 20px;
+    /* Memberikan padding pada elemen */
+    text-align: center;
+    /* Menyelaraskan teks di tengah */
+}
+
+.contact-call .container {
+    max-width: 800px;
+    /* Mengatur lebar maksimum container */
+    margin: 0 auto;
+    /* Pusatkan container */
+}
+
+.contact-call h2 {
+    font-size: 2em;
+    /* Mengatur ukuran font heading */
+    margin-bottom: 20px;
+    /* Memberikan margin bawah pada heading */
+    color: #333;
+    /* Mengatur warna teks pada heading */
+}
+
+.contact-call ul {
+    list-style-type: none;
+    /* Menghilangkan bullet points pada list */
+    padding: 0;
+    /* Menghilangkan padding default pada list */
+    text-align: left;
+    /* Menyelaraskan teks di kiri */
+}
+
+.contact-call ul li {
+    background-color: #ffffff;
+    /* Mengatur warna latar belakang item */
+    border: 1px solid #ddd;
+    /* Mengatur border pada item */
+    border-radius: 5px;
+    /* Membuat sudut item melengkung */
+    margin-bottom: 10px;
+    /* Memberikan margin bawah pada item */
+    padding: 15px;
+    /* Memberikan padding pada item */
+    font-size: 1em;
+    /* Mengatur ukuran font pada item */
+    color: #555;
+    /* Mengatur warna teks pada item */
+}
+
+.contact-call ul li strong {
+    color: #000;
+    /* Mengatur warna teks tebal */
+}
+
+.contact-call p {
+    font-size: 1em;
+    /* Mengatur ukuran font pada paragraf */
+    color: #555;
+    /* Mengatur warna teks pada paragraf */
+    margin-top: 20px;
+    /* Memberikan margin atas pada paragraf */
+}
+
+.contact-call a {
+    color: #049ef7;
+    /* Mengatur warna teks pada tautan */
+    text-decoration: none;
+    /* Menghilangkan garis bawah pada tautan */
+}
+
+.contact-call a:hover {
+    text-decoration: underline;
+    /* Menambahkan garis bawah pada tautan saat di-hover */
+}
+
+.mainpadding {
+    margin-top: 105px;
+    /* Memberikan margin atas pada elemen */
+    margin-bottom: 90px;
+    /* Memberikan margin bawah pada elemen */
+    padding: 0 320px;
+    /* Memberikan padding kiri dan kanan pada elemen */
+}
+
+.products {
+    display: flex;
+    /* Menampilkan elemen secara fleksibel */
+    flex-wrap: wrap;
+    /* Membungkus elemen dalam baris baru jika diperlukan */
+    gap: 20px;
+    /* Memberikan jarak antara elemen */
+    justify-content: center;
+    /* Menyelaraskan elemen di tengah */
+}
+
+.product-detail {
+    background-color: #f7f7f7;
+    /* Mengatur warna latar belakang elemen */
+    padding: 20px;
+    /* Memberikan padding pada elemen */
+    border-radius: 10px;
+    /* Membuat sudut elemen melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Menambahkan bayangan pada elemen */
+    flex: 1 1 calc(33.333% - 40px);
+    /* Mengatur lebar elemen secara fleksibel */
+    box-sizing: border-box;
+    /* Mengatur ukuran box sesuai dengan border */
+}
+
+.product-detail h2 {
+    margin-top: 0;
+    /* Menghilangkan margin atas pada heading */
+}
+
+.product-detail ul {
+    padding-left: 20px;
+    /* Memberikan padding kiri pada list */
+}
+
+.authorr {
+    margin-top: 150px;
+    /* Memberikan margin atas pada elemen */
+    margin-bottom: 135px;
+    /* Memberikan margin bawah pada elemen */
+}
